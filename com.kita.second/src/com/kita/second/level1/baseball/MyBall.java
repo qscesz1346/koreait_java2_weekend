@@ -36,10 +36,12 @@ public class MyBall {
 				}
 			}
 		}
+		
+		
 	}
 	
-	int[] getMyNum() {
-		return myArr;
+	int getMyNum(int idx) {
+		return myArr[idx];
 	}
 	
 	
