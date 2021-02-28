@@ -5,30 +5,30 @@ import java.util.Scanner;
 public class PhoneTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-//		±âº»Çü º¯¼ö
-//		char : ºóÄ­  ¼ıÀÚ·Î º¯È¯ ½Ã 0
-//		¼ıÀÚÇü : 0
+
+//		ê¸°ë³¸í˜• ë³€ìˆ˜
+//		char : ë¹ˆì¹¸  ìˆ«ìë¡œ ë³€í™˜ ì‹œ 0
+//		ìˆ«ìí˜• : 0
 //		boolean : false
 //
-//		ÂüÁ¶Çü º¯¼ö
+//		ì°¸ì¡°í˜• ë³€ìˆ˜
 //		null
-		
+
 		Phone myPhone = new Phone();
-		myPhone.color = "ÆÄ¶û";
-		myPhone.phoneName = "¾ÆÀÌÆù 12";
-		myPhone.owner = "¹Ú¿¬Áø";
-		myPhone.memory = 512;
-		
-		Phone p1 = new Phone("°¶·°½Ã s20", "»¡°­", 256);
-		
-		myPhone.call("¾ö¸¶");
-		
-		Phone yourPhone = new Phone();
-		
-		
-		
-		
-		
+//		myPhone.color = "íŒŒë‘";
+//		myPhone.phoneName = "ì•„ì´í° 12";
+//		myPhone.owner = "ë°•ì—°ì§„";
+//		myPhone.memory = 512;
+
+		Phone p1 = new Phone("ê°¤ëŸ­ì‹œ s20", "ë¹¨ê°•", 256);
+		p1.setOwner("ë°•ì—°ì§„");
+		String p1Owner = p1.getOwner();
+		System.out.println("p1ì˜ ì£¼ì¸ì€ " + p1Owner);
+		int p1Memory = p1.getMemory();
+		System.out.println("p1ì˜ ë©”ëª¨ë¦¬ëŠ” " + p1Memory);
+		p1.setMemory(512);
+		p1Memory = p1.getMemory();
+		System.out.println("p1ì˜ ë©”ëª¨ë¦¬ëŠ” " + p1Memory);
+
 	}
 }

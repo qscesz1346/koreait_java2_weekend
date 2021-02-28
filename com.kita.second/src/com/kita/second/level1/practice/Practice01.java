@@ -1,72 +1,72 @@
 package com.kita.second.level1.practice;
 
 public class Practice01 {
-	// ±¸±¸´Ü 2´Ü Âï±â ¸Ş¼Òµå
-		// 2 * 1 = 2
-		// 2 * 2 = 4
-		// ...
-		// 2 * 9 = 18
-		public static void main(String[] args) {
+	// êµ¬êµ¬ë‹¨ 2ë‹¨ ì°ê¸° ë©”ì†Œë“œ
+	// 2 * 1 = 2
+	// 2 * 2 = 4
+	// ...
+	// 2 * 9 = 18
+	public static void main(String[] args) {
 //			printGugudan();
 //			System.out.println();
 //			printGugudan(5);
-			
+
 //			printStars(6, 3);
-			
-			int result = sum(1, 2);
-			int result2 = sum(result, 3);
+
+		int result = sum(1, 2);
+		int result2 = sum(result, 3);
+	}
+
+	public static int sum(int n1, int n2) {
+		int result = n1 + n2;
+		return result;
+	}
+
+	public static void printGugudan() {
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("2 * %d = %d\n", i, i * 2);
 		}
-		
-		public static int sum(int n1, int n2) {
-			int result = n1+n2;
-			return result;
+	}
+
+	// ì˜¤ë²„ë¡œë”©(Overloading)
+	// ë§¤ê°œë³€ìˆ˜ì˜ 1.ê°œìˆ˜ 2.íƒ€ì… 3.ìœ„ì¹˜
+	public static void printGugudan(int dan) {
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("%d * %d = %d\n", dan, i, i * dan);
 		}
-		
-		public static void printGugudan() {
-			for(int i=1; i<10; i++) {
-				System.out.printf("2 * %d = %d\n", i, i*2);
-			}
-		}
-		
-		// ¿À¹ö·Îµù(Overloading)
-		// ¸Å°³º¯¼öÀÇ 1.°³¼ö  2.Å¸ÀÔ  3.À§Ä¡
-		public static void printGugudan(int dan) {
-			for(int i=1; i<10; i++) {
-				System.out.printf("%d * %d = %d\n", dan, i, i*dan);
-			}
-		}
-		
+	}
+
 //		public static void printGugudan(String dan) {
 //			for(int i=1; i<10; i++) {
 //				System.out.printf("%d * %d = %d\n", dan, i, i*dan);
 //			}
 //		}
-		
+
 //		public static void printGugudan(int dan, String max) {
 //			for(int i=1; i<10; i++) {
 //				System.out.printf("%d * %d = %d\n", dan, i, i*dan);
 //			}
 //		}
-	//	
+	//
 //		public static void printGugudan(String max, int dan) {
 //			for(int i=1; i<10; i++) {
 //				System.out.printf("%d * %d = %d\n", dan, i, i*dan);
 //			}
 //		}
-		
-		// º°Âï±â ¸Ş¼Òµå
-		// ³»°¡ ÀÔ·ÂÇÏ´Â °ª¿¡ µû¶ó line(ÁÙ)°ú star(º° °³¼ö)°¡ ´Ş¶óÁöµµ·Ï
-		// line: 3, star: 5
-		// *****
-		// *****
-		// *****
-		
-		public static void printStars(int line, int star) {
-			for(int i=0; i<line; i++) {
-				for(int z=0; z<star; z++) {
-					System.out.print("*");
-				}
-				System.out.println();
+
+	// ë³„ì°ê¸° ë©”ì†Œë“œ
+	// ë‚´ê°€ ì…ë ¥í•˜ëŠ” ê°’ì— ë”°ë¼ line(ì¤„)ê³¼ star(ë³„ ê°œìˆ˜)ê°€ ë‹¬ë¼ì§€ë„ë¡
+	// line: 3, star: 5
+	// *****
+	// *****
+	// *****
+
+	public static void printStars(int line, int star) {
+		for (int i = 0; i < line; i++) {
+			for (int z = 0; z < star; z++) {
+				System.out.print("*");
 			}
+			System.out.println();
 		}
+	}
 }
