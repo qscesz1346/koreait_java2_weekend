@@ -11,9 +11,7 @@ public class Checker {
 			b = 0;
 			for (int i = 0; i < gameCnt; i++) {
 				for (int z = 0; z < gameCnt; z++) {
-					if(ball == myBall) {
-						
-					}
+					
 				}
 			}
 		}
