@@ -8,6 +8,8 @@ public class Dog extends Animal { // 자식extends부모 클래스상속
 //		super.name = "흰둥이";
 //		super.age = 1;
 		this.cutiness = true;
+//		super.type = "";
+//		super.method();
 	}
 	
 //	Overriding

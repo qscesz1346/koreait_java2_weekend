@@ -4,6 +4,19 @@ import java.util.Scanner;
 
 public class Test {
 	public static void main(String[] args) {
+		Calc myCalc = new Calc();
+//		double pi = myCalc.pi;
+		double pi = Calc.pi;
+//		int num = Calc.num;
+		int num = myCalc.num;
+		myCalc.num = 15;
+		System.out.println("myCalc.num : "+myCalc.num);
+		
+		Calc yourCalc = new Calc();
+		System.out.println("yourCalc.num : "+ yourCalc.num);
+		
+		Calc.pi = 3.14;
+		
 //		Korean yj = new Korean("대한민국");
 //		System.out.println(yj.nation);
 //		yj.nation = "미국";
@@ -22,9 +35,6 @@ public class Test {
 		int result2 = cl.sum(4, 5, 9, 5, 6, 4, 3);
 		System.out.println("result2: " + result2);
 
-
-
-	
 //		final LEN = 3;
 //		LEN = 3;
 	}
