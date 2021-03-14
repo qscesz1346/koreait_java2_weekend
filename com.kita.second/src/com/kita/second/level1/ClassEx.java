@@ -23,6 +23,7 @@ public class ClassEx {
 	// 생성자
 	public ClassEx() {
 //		super();
+		super();
 	}
 
 	public ClassEx(int field1) {

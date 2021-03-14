@@ -2,21 +2,18 @@ package com.kita.second.level2;
 
 public class NetflixTest {
 	public static void main(String[] args) {
-		Game game= new Game("스타듀밸리");
-		game.playGame();
-		game = new Overwatch("");
-		game.playGame();
-		game = new BattleGround("");
-		game.playGame();
-		
-		
-		
-		Netflix nf = new Drama("펜트하우스");
-		nf = new Movie("승리호");
-//		nf = new Comedy("아는형님");
+		ProGamer hong = new ProGamer();
+		Game gm = new Game();
+		BattleGround bg = new BattleGround();
+		Overwatch ow = new Overwatch();
 
-		
-		
+		hong.work(gm);
+		hong.work(bg);
+		hong.work(ow);
+
+//		Viewer rv = new Viewer();
+//		rv.chooseNew();
+	
 		
 		
 		
@@ -24,3 +21,7 @@ public class NetflixTest {
 		
 	}
 }
+//Drama d1 = new Drama(2);
+//Movie m1 = new Movie(3);
+//Movie m2  = new Movie(4);
+//Viewer rv2 = new Viewer(d1, m1, m2); 
