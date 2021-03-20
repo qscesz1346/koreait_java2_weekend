@@ -18,20 +18,31 @@ public class MyBall {
 	// 내 배열안의 숫자값 뽑기 getMyNum()
 	
 	void setNumbers() {
+		int min = 1;
+		int max = 9;
 		for (int i = 0; i < myArr.length; i++) {
-			System.out.println("값%d: \n");
-			try() {
-				
+			System.out.printf("값%d: \n", i+1);
+			String val = scan.next();
+			try {
+				myArr[i] = Integer.parseInt(val);
 			} catch(Exception e) {
-				
+				i--;
+				System.out.println("1~9까지의 숫자값을 입력하시오.");
+				continue;
 			}
 			
-		}
-		for (int z = 0; z < i; z++) {
-			if(myArr[z]==myArr[i]) {
+			if(myArr[i] < min || myArr[i] > max) {
+				System.out.println("범위 밖의 숫자입니다.");
 				i--;
-				System.out.println("중복된 값이 존재함.");
-				break;
+				continue;
+			}
+			
+			for (int z = 0; z < i; z++) {
+				if(myArr[z]==myArr[i]) {
+					i--;
+					System.out.println("중복된 값이 존재함.");
+					break;
+				}
 			}
 		}
 	}
